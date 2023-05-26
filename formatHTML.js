@@ -26,18 +26,18 @@ export const formatHTML = (html) => {
   //console.log(dom);
   const res = [];
   let indent = "";
-  const out = (dom, indent) => {
+  const out = (dom, indent, svg) => {
     if (dom.nodeType == 1) { // HTMLElement
       const tag = dom.rawTagName;
       if (tag == null) { // top level
         for (const c of dom.childNodes) {
-          out(c, indent);
+          out(c, indent, svg);
         }
-      } else if (isValidTag(tag)) {
+      } else if (svg || isValidTag(tag)) {
         res.push(indent + `<${tag}${dom.rawAttrs ? " " + dom.rawAttrs : ""}>`);
         const n = res.length;
         for (const c of dom.childNodes) {
-          out(c, indent + "  ");
+          out(c, indent + "  ", tag == "svg");
         }
         if (res.length == n) {
           if (!isOmitCloseTag(tag)) {
@@ -58,6 +58,6 @@ export const formatHTML = (html) => {
       throw new Error(dom.nodeType);
     }
   };
-  out(dom, indent);
+  out(dom, indent, false);
   return res.join("\n");
 };
