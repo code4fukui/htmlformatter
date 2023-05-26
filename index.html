@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+<title>formatHTML</title>
+</head><body>
+<h1>formatHTML</h1>
+
+<main>
+  <textarea id=src></textarea><br>
+  ↓<br>
+  <textarea id=dst></textarea><br>
+</main>
+
+<hr>
+<a href=https://github.com/code4fukui/htmlutil/>src on GitHub</a><br>
+
+<script type="module">
+import { formatHTML } from "./formatHTML.js";
+
+src.oninput = src.onkeyup = () => {
+  const html = src.value;
+  dst.value = formatHTML(html);
+};
+</script>
+
+<style>
+textarea {
+  width: 90vw;
+  height: 8em;
+}
+</style>
+
+</body></html>
