@@ -37,7 +37,7 @@ export const formatHTML = (html) => {
         res.push(indent + `<${tag}${dom.rawAttrs ? " " + dom.rawAttrs : ""}>`);
         const n = res.length;
         for (const c of dom.childNodes) {
-          out(c, indent + "  ", tag == "svg");
+          out(c, indent + "  ", svg || tag == "svg");
         }
         if (res.length == n) {
           if (!isOmitCloseTag(tag)) {
