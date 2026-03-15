@@ -1,6 +1,8 @@
 # htmlformatter
 
-format tool for HTML
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
+A tool for formatting HTML code with proper indentation and closing tags.
 
 ## Demo
 [https://code4fukui.github.io/htmlformatter](https://code4fukui.github.io/htmlformatter)
