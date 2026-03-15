@@ -2,8 +2,23 @@
 
 format tool for HTML
 
-- [https://code4fukui.github.io/htmlformatter](https://code4fukui.github.io/htmlformatter)
+## Demo
+[https://code4fukui.github.io/htmlformatter](https://code4fukui.github.io/htmlformatter)
 
-## HTML tag list
+## Features
+- Formats HTML code with proper indentation and closing tags
+- Supports all valid HTML tags
+- Handles self-closing tags correctly
 
-- [https://code4fukui.github.io/htmltags.csv](https://code4fukui.github.io/htmltags.csv) ([HTML 要素リファレンス - HTML: HyperText Markup Language | MDN](https://developer.mozilla.org/ja/docs/Web/HTML/Element)より)
+## Requirements
+None. This is a client-side JavaScript tool that can be used in any modern web browser.
+
+## Usage
+1. Copy the HTML code you want to format into the top text area.
+2. The formatted HTML will be displayed in the bottom text area.
+
+## Data / API
+The project uses a CSV file listing all valid HTML tags and their descriptions, which is loaded from [https://code4fukui.github.io/htmltags.csv](https://code4fukui.github.io/htmltags.csv).
+
+## License
+This project is licensed under the MIT License.
