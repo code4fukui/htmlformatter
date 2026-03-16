@@ -23,4 +23,4 @@ None. This is a client-side JavaScript tool that can be used in any modern web b
 The project uses a CSV file listing all valid HTML tags and their descriptions, which is loaded from [https://code4fukui.github.io/htmltags.csv](https://code4fukui.github.io/htmltags.csv).
 
 ## License
-This project is licensed under the MIT License.
+MIT License — see [LICENSE](LICENSE).

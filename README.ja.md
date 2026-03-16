@@ -1,13 +1,13 @@
 # HTMLフォーマッター
 
-HTML文書をきれいにフォーマットするツールです。
+HTMLコードを適切なインデントとタグの閉じ込みで整形するツールです。
 
 ## デモ
 [https://code4fukui.github.io/htmlformatter](https://code4fukui.github.io/htmlformatter)
 
 ## 機能
-- HTML文書を美しく整形
-- 開始タグと終了タグの自動生成
+- HTMLコードをきれいに整形
+- 開始タグと終了タグを自動生成
 
 ## 必要環境
 特にありません。
@@ -16,7 +16,7 @@ HTML文書をきれいにフォーマットするツールです。
 HTMLコードを入力欄に貼り付けると、自動的にフォーマットされた結果が出力されます。
 
 ## データ・API
-HTMLタグリスト: [https://code4fukui.github.io/htmltags.csv](https://code4fukui.github.io/htmltags.csv)
+HTMLタグのリストは[https://code4fukui.github.io/htmltags.csv](https://code4fukui.github.io/htmltags.csv)から取得しています。
 
 ## ライセンス
 MIT License
