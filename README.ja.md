@@ -52,7 +52,7 @@ console.log(formattedHTML);
 
 本フォーマッターは、どの要素が空要素（自己閉じ要素）であるかを判別するために、標準HTMLタグのリストを使用しています。このリストは、MDNのHTML要素リファレンスをスクレイピングして自動生成されたものです。
 
-生成されたデータはこちらで公開されています: [htmltags.csv](https://code4fukui.github.io/htmltags.csv)
+生成されたデータはこちらで公開されています: htmltags.csv *(demo unavailable)*
 
 ## ライセンス
 
